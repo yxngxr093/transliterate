@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Script Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Universal Script Converter</h1>
+    <p style="text-align: center; max-width: 800px; margin: 10px auto; font-size: 1.1em;">
+        Convert text between various scripts with ease. Select the input and output scripts, then click "Transliterate" to see the result.
+    </p>
+
+    <div id="content">
+        <fieldset id="inputSection">
+            
+            <label for="inputScript">Input Script</label>
+            <select id="inputScript" aria-label="Select Input Script">
+                <option value="AutoDetect" selected>Auto-Detect</option>
+                <option value="Brahmi">Brahmi</option>
+                <option value="RussianCyrilic">Cyrillic</option>
+                <option value="Devanagari">Devanagari</option>
+                <option value="Gujarati">Gujarati</option>
+                <option value="Hebrew">Hebrew</option>
+                <option value="Hiragana">Japanese (Hiragana)</option>
+                <option value="Javanese">Javanese</option>
+                <option value="Kaithi">Kaithi</option>
+                <option value="Kannada">Kannada</option>
+                <option value="Malayalam">Malayalam</option>
+                <option value="Modi">Modi</option>
+                <option value="Mongolian">Mongolian (Ali Gali)</option>
+                <option value="OldPersian">Old Persian</option>
+                <option value="Phnx">Phoenician</option>
+                <option value="Gurmukhi">Punjabi (Gurumukhi)</option>
+                <option value="HK">Roman (Harvard-Kyoto)</option>
+                <option value="IAST">Roman (IAST)</option>
+                <option value="RomanReadable">Roman (Readable)</option>
+                <option value="Sharada">Sharada</option>
+                <option value="Siddham">Siddham</option>
+                <option value="Sogd">Sogdian</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Tibetan">Tibetan</option>
+                <option value="Urdu">Urdu</option>
+            </select>
+            <textarea id="inputText" aria-label="Input Text Area" placeholder="Enter text"></textarea>
+        </fieldset>
+
+        <fieldset id="OutputSection">
+            
+            <label for="outputScript">Output Script</label>
+            <select id="outputScript" aria-label="Select Output Script">
+                <option value="" disabled selected>Select</option>
+                <option value="Brahmi">Brahmi</option>
+                <option value="RussianCyrilic">Cyrillic</option>
+                <option value="Devanagari">Devanagari</option>
+                <option value="Gujarati">Gujarati</option>
+                <option value="Hebrew">Hebrew</option>
+                <option value="Hiragana">Japanese (Hiragana)</option>
+                <option value="Javanese">Javanese</option>
+                <option value="Kaithi">Kaithi</option>
+                <option value="Kannada">Kannada</option>
+                <option value="Malayalam">Malayalam</option>
+                <option value="Modi">Modi</option>
+                <option value="Mongolian">Mongolian (Ali Gali)</option>
+                <option value="OldPersian">Old Persian</option>
+                <option value="Phnx">Phoenician</option>
+                <option value="Gurmukhi">Punjabi (Gurumukhi)</option>
+                <option value="HK">Roman (Harvard-Kyoto)</option>
+                <option value="IAST">Roman (IAST)</option>
+                <option value="RomanReadable">Roman (Readable)</option>
+                <option value="Sharada">Sharada</option>
+                <option value="Siddham">Siddham</option>
+                <option value="Sogd">Sogdian</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Tibetan">Tibetan</option>
+                <option value="Urdu">Urdu</option>
+            </select>
+            <textarea id="TransliteratedText" aria-label="Output Text Area" placeholder="Output" readonly></textarea>
+        </fieldset>
+    </div>
+
+    <div id="actionButton">
+        <button id="TransliterateButton" aria-label="Transliterate Button">Transliterate</button>
+    </div>
+
+    <footer>
+        <p>This project is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GNU General Public License v3.0</a>.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
